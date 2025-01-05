@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import './globals.css';
+import Nevbar from '@/components/Nevbar';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -22,7 +23,12 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <div className='bg-color-bg text-white font-exo'>
+          <div className='container mx-auto px-4 py-4'>
+            <Nevbar />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
