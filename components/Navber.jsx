@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Nevbar = () => {
+const Navber = () => {
   return (
     <header className='flex justify-between items-center mb-8'>
       <div className='flex items-center space-x-8'>
@@ -63,4 +63,4 @@ const Nevbar = () => {
   );
 };
 
-export default Nevbar;
+export default Navber;
