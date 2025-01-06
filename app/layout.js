@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import './globals.css';
 import Navber from '@/components/Navber';
+import Footer from '@/components/Footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -26,7 +27,8 @@ export default function RootLayout({ children }) {
         <div className='bg-color-bg text-white font-exo'>
           <div className='container mx-auto px-4 py-4'>
             <Navber />
-            {children}
+            <div>{children}</div>
+            <Footer />
           </div>
         </div>
       </body>
