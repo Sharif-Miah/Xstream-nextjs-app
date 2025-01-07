@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const VideoCart = ({ videoData }) => {
   // console.log(videoData);
   return (
-    <div>
+    <Link href={`/single-video-details/${videoData.videoId}`}>
       <div className='rounded-lg overflow-hidden bg-color-gray'>
         <Image
           src={videoData.thumbnail}
@@ -17,7 +18,7 @@ const VideoCart = ({ videoData }) => {
           <p className='text-sm text-gray-400'>{videoData.channelTitle}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <div className='bg-color-bg text-white font-exo'>
           <div className='container mx-auto px-4 py-4'>
             <Navber />
-            <div>{children}</div>
+            <div className='my-16'>{children}</div>
             <Footer />
           </div>
         </div>
