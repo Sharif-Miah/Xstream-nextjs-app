@@ -1,7 +1,10 @@
+import { getDicionary } from '@/app/[lang]/dictionaries';
 import videoDatas from '@/lib/vidoes.json';
 import Image from 'next/image';
 
-const SingleVideoDetail = ({ id, lang }) => {
+const SingleVideoDetail = async ({ id, lang }) => {
+  const dictionary = await getDicionary(lang);
+
   return (
     <main className='flex flex-col lg:flex-row gap-6'>
       <div className='lg:w-3/4'>
@@ -67,7 +70,7 @@ const SingleVideoDetail = ({ id, lang }) => {
         </div>
       </div>
       <div className='lg:w-1/4'>
-        <h2 className='text-xl font-semibold mb-4'>You may like</h2>
+        <h2 className='text-xl font-semibold mb-4'>{dictionary.title}</h2>
         <div className='space-y-4'>
           {videoDatas.slice(0, 8).map((video) => (
             <div
