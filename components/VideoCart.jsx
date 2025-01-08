@@ -4,7 +4,7 @@ import Link from 'next/link';
 const VideoCart = ({ videoData }) => {
   // console.log(videoData);
   return (
-    <Link href={`/single-video-details/${videoData.videoId}`}>
+    <Link href={`/videos/${videoData.videoId}`}>
       <div className='rounded-lg overflow-hidden bg-color-gray'>
         <Image
           src={videoData.thumbnail}
