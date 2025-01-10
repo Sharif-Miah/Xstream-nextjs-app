@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
           <div className='container mx-auto px-4 py-4'>
             <Navber />
             <div className='my-16'>{children}</div>
+            <div id='modal-root-content'></div>
             <Footer />
           </div>
         </div>
