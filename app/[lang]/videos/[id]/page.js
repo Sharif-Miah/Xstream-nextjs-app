@@ -1,12 +1,7 @@
-import SingleVideoDetail from '@/components/singleVideoDetail';
+import SingleVideoDetail from '@/components/SingleVideoDetail';
 
-const singleVideoDetailsPage = ({ params: { id, lang } }) => {
-  return (
-    <SingleVideoDetail
-      id={id}
-      lang={lang}
-    />
-  );
+const SingleVideoDetailsPage = ({ params: { lang } }) => {
+  return <SingleVideoDetail lang={lang} />;
 };
 
-export default singleVideoDetailsPage;
+export default SingleVideoDetailsPage;

@@ -1,14 +1,7 @@
-// import videoDatas from '@/lib/vidoes.json';
-
 import Link from 'next/link';
 import VideoCart from './videoCart';
 
 const VideoList = async ({ videoDatas }) => {
-  //   const response = await fetch('/lib/vidoes.json');
-  //   const data = await response.json();
-
-  //   console.log(videoDatas);
-
   return (
     <section classNameName='my-10'>
       <div className='flex justify-between items-center mb-4'>
