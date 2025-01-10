@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import VideoCart from './videoCart';
+import VideoCart from './VideoCart';
 
 const VideoList = async ({ videoDatas }) => {
   return (
