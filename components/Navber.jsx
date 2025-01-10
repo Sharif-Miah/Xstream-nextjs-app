@@ -27,9 +27,9 @@ const Navber = () => {
             GAMES
           </Link>
           <Link
-            href='/'
+            href='/all-videos'
             className='text-gray-400 hover:text-white'>
-            TEAMS
+            All Videos
           </Link>
         </nav>
       </div>

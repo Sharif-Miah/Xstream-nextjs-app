@@ -2,7 +2,7 @@ import { getDicionary } from '@/app/[lang]/dictionaries';
 import videoDatas from '@/lib/vidoes.json';
 import Image from 'next/image';
 
-const SingleVideoDetail = async ({ lang }) => {
+const SingleVideoDetail = async ({ id, lang }) => {
   const dictionary = await getDicionary(lang);
 
   return (
