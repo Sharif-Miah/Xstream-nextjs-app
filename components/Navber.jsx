@@ -22,7 +22,7 @@ const Navber = () => {
             TOP STREAMING
           </Link>
           <Link
-            href='/'
+            href='/games'
             className='text-gray-400 hover:text-white'>
             GAMES
           </Link>

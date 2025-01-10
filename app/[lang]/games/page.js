@@ -1,7 +1,7 @@
 import VideoList from '@/components/VideoList';
 import videoDatas from '@/lib/vidoes.json';
 
-const AllVideos = () => {
+const GamesPage = () => {
   return (
     <div>
       <VideoList videoDatas={videoDatas} />
@@ -9,4 +9,4 @@ const AllVideos = () => {
   );
 };
 
-export default AllVideos;
+export default GamesPage;
