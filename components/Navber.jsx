@@ -5,14 +5,17 @@ const Navber = () => {
   return (
     <header className='flex justify-between items-center mb-8'>
       <div className='flex items-center space-x-8'>
-        <Link href='/'>
-          <Image
+        <Link
+          href='/'
+          className='text-3xl font-bold text-color-purple'>
+          {/* <Image
             src='/logo.svg'
             alt='LWS Xstream Logo'
             className='h-6'
             height={160}
             width={160}
-          />
+          /> */}
+          Xtream
         </Link>
 
         <nav className=' hidden md:flex space-x-6'>
